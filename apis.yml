@@ -1,23 +1,110 @@
 aid: apttus
+
 name: Apttus
-description: 'Apttus is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://conga.com/sites/default/files/styles/large/public/image/2026-03/Social%20Share%20%281%29%20%281%29.png?itok=uH7gF5iu
+
+description: 'Apttus, now part of Conga, provides cloud-based solutions for quote‑to‑cash, contract lifecycle management, and document automation. The company offers a unified platform that helps enterprises streamline pricing, sales, and legal processes, integrating CPQ, CLM, e‑signature, and revenue management into a single SaaS solution.'
+
 url: https://raw.githubusercontent.com/api-evangelist/apttus/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-25 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-25'
+
 modified: '2026-09-25'
+
 tags:
+- SaaS
+- CPQ
+- CLM
+- Document Automation
+- Quote-to-Cash
 - Company
-apis: []
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Conventions
+  url: conventions/apttus-conventions.yml
+- type: Security
+  url: security/apttus-vulnerability-disclosure.yml
+- type: Authentication
+  url: authentication/apttus-authentication.yml
+- type: LLMsTxt
+  url: llms/apttus-llms.txt
+- type: SecurityTxt
+  url: well-known/apttus-status-security.txt
+- type: SecurityTxt
+  url: well-known/apttus-learningcenter-security.txt
+- type: WellKnown
+  url: well-known/apttus-well-known.yml
+- type: Hosts
+  url: hosts/apttus-hosts.yml
+- type: Vendors
+  url: vendors/apttus-vendors.yml
+- type: TermsOfService
+  url: https://community.conga.com/site/terms
+- type: Support
+  url: https://support.conga.com/
+- type: StatusPage
+  url: https://status.conga.com/
+- type: SignUp
+  url: https://community.conga.com/member/register
+- type: PrivacyPolicy
+  url: https://conga.com/privacy
+- type: Pricing
+  url: https://conga.com/pricing
+- type: Newsroom
+  url: https://conga.com/press
+- type: Leadership
+  url: https://conga.com/de/leadership
+- type: ChangeLog
+  url: https://documentation.conga.com/en/release-notes
+- type: Blog
+  url: https://conga.com/resources/blog
+- type: GettingStarted
+  url: https://developer.conga.com/revenue/reference/post_split-criteria-1
+- type: Documentation
+  url: https://developer.conga.com/
+- type: VulnerabilityDisclosure
+  url: security/apttus-vulnerability-disclosure.yml
+- type: DomainSecurity
+  url: security/apttus-domain-security.yml
 - type: Website
-  url: https://forgeglobal.com/apttus_stock/
+  url: https://conga.com/
+
+apis: []
+
+x-enrichment:
+  date: '2026-09-25'
+  status: enriched
+  artifacts_added: 17
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
+x-coverage:
+  state: none
+  reason: no-developer-program
+  method: derived
+  generated: '2026-09-25'
+  generator: derive-coverage.py (pre-flight evidence)
+  detail: >-
+    the company publishes no developer documentation host and no machine-readable contract on its own domain
+  evidence:
+  - url: https://developer.conga.com/mcp
+    status: null
+  - url: https://community.conga.com/mcp
+    status: 403
+  - url: https://forgeglobal.com/apttus_stock/
+    status: 403

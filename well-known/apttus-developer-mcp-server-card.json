@@ -1,0 +1,1 @@
+{"$schema":"https://static.modelcontextprotocol.io/schemas/v1/server-card.schema.json","name":"com.readme/conga-group","version":"1.0.0","title":"Conga Developer Portal","description":"MCP server for Conga Developer Portal. Lets AI agents explore this project's API reference and documentation.","remotes":[{"type":"streamable-http","url":"https://developer.conga.com/mcp"}]}

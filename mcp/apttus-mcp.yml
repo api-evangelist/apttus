@@ -1,0 +1,7 @@
+generated: 2026-09-26
+method: none
+source: "https://developer.conga.com/mcp"
+deployment:
+  mode: none
+  auth: unknown
+  verified: probed

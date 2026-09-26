@@ -1,0 +1,29 @@
+generated: '2026-09-25'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://developer.conga.com/platform/reference/get_api-localization-admin-v1-translations-type-count.md
+sources:
+- https://developer.conga.com/platform/reference/get_api-localization-admin-v1-translations-type-count.md
+- https://developer.conga.com/platform/reference/get_api-localization-admin-v1-translations-type.md
+- https://developer.conga.com/revenue/docs/filtering.md
+- https://developer.conga.com/revenue/docs/pagination.md
+idempotency:
+  coverage: na
+  evidence: The documented endpoints are read‑only (GET) and do not describe any idempotency key mechanism.
+pagination:
+  style: cursor
+  params:
+  - cursor
+  - pageSize
+  response_fields:
+  - NextCursor
+  - HasMoreRecords
+  evidence: GET /api/localization-admin/v1/translations/{type} uses a cursor‑based approach with optional `cursor` and `pageSize` query parameters.
+    The response schema includes `NextCursor` and `HasMoreRecords`.
+versioning: v1
+error_envelope: ErrorDetail objects are included in the `Errors` and `Warnings` arrays of the response schemas (`Int32NullableAPIResponse`, `StringAPIResponse`,
+  etc.).
+authentication: Bearer token via `Authorization` header (apiKey security scheme).
+note: No pagination using `page`/`limit` is defined for these specific endpoints; the cursor style is the only pagination mechanism described
+  in the provided pages.
+docs: https://developer.conga.com/platform/reference/get_api-localization-admin-v1-translations-type-count.md
